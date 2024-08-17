@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/default.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Contate-me</title>
+    <!--me inspirei 100% no trabalho da sarah para fazer este, mas garanto que programei desde o 0-->
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="menu">
+            
+            <a  class="homepage" href="index.html"><img src="imagens/logo.png" alt="Botão para voltar à página principal."></a>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="historia.html" rel="next">Historia</a></li>
+                <li><a href="agenda.html" rel="next">Agenda</a></li>
+                <li><a href="discografia.html" rel="next">Discografia</a></li>
+                <li><a href="#galery" rel="next">Fotos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        
+        </nav>
+
+    </header>
+
+    <main class="contact">
+        <h1>Mande-me uma mensagem!</h1>
+
+        <form class="formulario" action="contatinho.php" method="POST">
+
+            <div class="formgroup">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+            
+            <div class="formgroup">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu endereço de email" required>
+            </div>
+
+            <div class="formgroup">
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Especifique o assunto" required>
+            </div>
+
+            <div class="formgroup">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+            </div>
+            <button type="submit">Mandar</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <!--logo do artista-->
+            <p class="credito">Site feito por: <strong>Rebeca Schmidt</strong></p>
+
+            <p>Instagram: <a href="https://www.instagram.com/sucoy_decaju/">@sucoy_decaju</a></p>
+
+            <p>Não tenho mais informações para dar, então finge que aqui tem algo muito legal só para encher linguiça</p>
+            <p>Uaaaaaau!!! Bartolomeu</p>
+
+            <p class="insignificante">12/08/2024</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
